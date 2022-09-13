@@ -1,38 +1,49 @@
-.App {
+body {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.company{
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.grid-container {
+  grid-template-columns: repeat(2,auto);
+  display: inline-grid;
+  gap: 20px 20px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(5, auto);
+    gap: 50px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.grid-item {
+  display: inline-grid;
 }
-
-.App-link {
-  color: #61dafb;
+@media only screen and (min-width: 600px) {
+  .grid-item {
+    width: auto;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.css-bdhsul-MuiTypography-root-MuiDialogTitle-root{
+  text-align: center;
+}
+img, .details{
+  display: block;
+  margin: auto;
+}
+.css-qfso29-MuiTypography-root-MuiDialogContentText-root{
+  text-align: center;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  background: gray;
+  color: black;
+  border-radius: 15px 15px 15px 15px;
 }
